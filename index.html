@@ -1,0 +1,117 @@
+<!-- Ennoncé TP n°02 HTML -->
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        
+        <meta charset="UTF-8"/>
+        <meta name="description" content="TP 2 Leroux du Gary du 05/08/2021">
+        <title>TP2 HTML - Leroux Gary</title>
+    </head>
+    <body>
+        <p>TP d'HTML n°02 - Leroux Gary</p>
+        <header> <!-- En tête -->
+            <h1>TP n°2 - La structuration</h1>
+        
+            <nav> <!-- Menu de navigation -->
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#primaire">Les éléments de structuration primaires</a></li>
+                    
+                    <nav> <!-- Menu de navigation imbriqué n°01 -->
+                    <ul>
+                        <li><a href="#header">Header</a></li>
+                        <li><a href="#nav">Nav</a></li>
+                        <li><a href="#article">Article</a></li>
+                        <li><a href="#footer">Footer</a></li>
+                    </ul>
+                    </nav> <!-- Fin du menu de navigation imbriqué n°01 -->
+
+                    <li><a href="#complements">Les éléments de structuration secondaires</a></li>
+                    
+                    <nav> <!-- Menu de navigation imbriqué n°02 -->
+                    <ul>
+                        <li><a href="#division">Div</a></li>
+                        <li><a href="#span">Span</a></li>
+                    </ul>
+                    </nav> <!-- Fin du menu de navigation imbriqué n°02 -->
+                    
+                </ul>
+            </nav> <!-- Fin du menu de navigation -->
+            <nav>
+            <h2 id="intro">Introduction</h2>
+            <p>En général, une page web est constituée d'un en-tête (tout en haut), de menus de navigation (en haut ou sur les côtés), de différentes sections au centre… et d'un pied de page (tout en bas).</p>
+
+            <p>Dans ce chapitre, nous allons nous intéresser aux nouvelles balises HTML dédiées à la structuration du site.<br>
+            Ces balises ont été introduites par HTML5 (elles n'existaient pas avant) et vont nous permettre de dire : « Ceci est mon en-tête », « Ceci est mon menu de navigation », etc.</p>
+
+            <p>Pour le moment, nous n'allons pas encore faire de mise en page.<br>
+            Nous allons en fait préparer notre document HTML pour pouvoir découvrir la mise en page dans les prochains chapitres.</p>
+            </nav>
+        </header> <!-- Fin de l'en-tête -->
+        
+        <article> <!-- Article -->
+            <div class="bloc">
+            <h2 id="primaire">Les éléments de structuration primaires</h2>
+            <p>Je vais vous présenter ici les nouvelles balises introduites par HTML5 pour structurer nos pages.<br>
+            Vous allez voir, cela ne va pas beaucoup changer l'apparence de notre site pour le moment, mais il sera bien construit et prêt à être mis en forme ensuite !
+            </div>
+            <div class="bloc">
+            <h3 id="header">&lt;header&gt;  : l'en-tête</h3>
+            <p>La plupart des sites web possèdent en général un <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/header" title="Redirection pasge MDN sur balise header">en-tête</a>, appelé header en anglais.<br> 
+            On y trouve le plus souvent un logo, une bannière, le slogan de votre site…<br>
+            Vous devrez placer ces informations à l'intérieur de la balise &lt;header&gt;.</p>
+            
+            <p>L'en-tête peut contenir tout ce que vous voulez : images, liens, textes…</p>
+            </div>
+            <div class="bloc">
+            <h3 id="nav" style="font-size:1.17em;">&lt;nav&gt; : principaux liens de navigation</h3>
+            <h5 style="font-size:1em; font-weight: 100; margin-bottom:0; ">La balise <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav" title="Redirection vers page MDN sur balise nav" target="_blank">&lt;nav&gt;</a> doit regrouper tous les principaux liens de navigation du site.</h5><p>
+            Vous y placerez par exemple le menu principal de votre site.<br>
+            Généralement, le menu est réalisé sous forme de liste à puces à l'intérieur de la balise &lt;nav&gt; :</p>
+            </div>
+            <div class="bloc">
+            <h3 id="article">&lt;article&gt; : un article indépendant</h3>
+            <p>La balise <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/article" title="Redirection vers page MDN balise arcticle"> &lt;article&gt;</a> sert à englober une portion généralement autonome de la page. C'est une partie de la page qui pourrait ainsi être reprise sur un autre site. C'est le cas par exemple des actualités (articles de journaux ou de blogs).</p>
+            </div>
+            <hr>
+            <div class="bloc">
+            <p>Source de l'article : 
+                <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1605881-structurez-votre-page" title="Redirection vers la source" target="_blank">OpenClassRoom</a> 
+            </p>
+            <hr>
+            </div>
+        </article> <!-- Fin de l'article -->
+        
+        <article> <!-- Second article -->
+            <div id="1">
+            <h2 id="complements">Les éléments de structuration complémentaires</h2>
+            <h3 id="division">&lt;div&gt;  : la division</h3>
+            <p>Elément HTML qui, par défaut, permet de <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/div" title="Redirection vers page mdn balise div" target="_blank">diviser</a> du contenu sous forme de blocs (systématiquement avec un retour à la ligne).<br> 
+            Vous comprendrez l’utilité de cet élément très prochainement avec le cours sur le CSS.</p>
+            </div>
+            <div id="2">
+            <h3 id="span">&lt;span&gt;  : le conteneur générique en ligne</h3>
+            <p>Elément HTML qui, par défaut, permet de <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/span" title="Redirection vers page mdn balise span" target="_blank">fractionner</a> du contenu sans retour à la ligne (affichage côte à côte).<br>
+            Le span est très utile pour esthétiquement mettre en valeur des mots ou groupes de mots au sein d’un paragraphe (via CSS).</p>
+            </div>
+            <hr>
+            <div id="3">
+            <p>Source de l'article : 
+                <a href="#">Cours HTML - Yohann MOY</a> 
+            </p>
+            <hr>
+            </div>
+        </article> <!-- Fin du second article -->
+        
+        <footer> <!-- Pied de page -->    
+            
+
+            <h3 id="footer">&lt;footer&gt; : le pied de page</h3>
+            <p>À l'inverse de l'en-tête, le <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/footer" title="Redirection vers page MDN balise footer" target="_blank">pied de page</a> se trouve en général tout en bas du document.<br>
+            On y trouve des informations comme des liens de contact, le nom de l'auteur, les mentions légales, etc.</p>
+        
+        </footer> <!-- Fin du pied de page -->
+        
+    </body>
+</html>
